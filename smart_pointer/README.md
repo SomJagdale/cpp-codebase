@@ -160,8 +160,8 @@ A weak_ptr is created as a copy of shared_ptr. It provides access to an object t
 
 Cyclic Dependency (Problems with shared_ptr): Let’s consider a scenario where we have two classes A and B, both have pointers to other classes. So, it’s always like A is pointing to B and B is pointing to A. Hence, use_count will never reach zero and they never get deleted.
 
-Circular reference for weak pointer
-
+**Circular reference for weak pointer
+**
 This is the reason we use weak pointers(weak_ptr) as they are not reference counted. So, the class in which weak_ptr is declared doesn’t have a stronghold of it i.e. the ownership isn’t shared, but they can have access to these objects.
 
 Circular reference for weak pointer
