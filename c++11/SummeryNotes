@@ -1,0 +1,33 @@
+Change in Core C++ Language to Improve the runtime performance of application
+  1. RValue Reference 
+  2. Move Constructor
+  3. constexpr 
+  
+Change in Core C++ Language to improve the build time perfromance
+  1. extern template
+  
+Change in Core C++ language to improve the usablity of the programmer
+  1. Initialisation List
+  2. Uniform Initialisation
+  3. Type Interference(Type Deduction)
+  4. Range based for loop
+  5. Lambda functions
+  7. override 
+  8. final
+  9. default
+  10. delete
+  11. Object Construction improvement 
+  12. null pointer constant nullptr 
+  13. Right angle bracket
+
+Core Language Functionality improvements
+  1. variadic templates(typename...)
+  2. New String Literals(u8"I'm a UTF-8 string.", u"This is a UTF-16 string.", U"This is a UTF-32 string.")
+  3. Multithreading memory model
+  4. Thread-local storage(In a multi-threaded environment, it is common for every thread to have some unique variables. This already happens for the local variables of a function, but it does not happen for global and static variables.)
+  5. Explicitly defaulted special member functions( SomeType() = default; //The default constructor is explicitly stated. )
+  6. Explicitly deleted functions(void noInt(int) = delete;)
+  7. Type long long int(It is guaranteed to be at least as large as a long int, and have no fewer than 64 bits.)
+  8. Static assertions(static_assert((GREEKPI > 3.14) && (GREEKPI < 3.15), "GREEKPI is inaccurate!");)
+  9. Allow sizeof to work on members of classes without an explicit object(struct SomeType { OtherType member; }; sizeof(SomeType::member); // Does not work with C++03. Okay with C++11)
+  10. Allow garbage collected implementations
